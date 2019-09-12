@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h3 class="title">{{index+1}}. {{event.title}}</h3>
     <p class="time">{{dateTimeFormatter(Date.parse(new Date(event.date)),i18n[locale].fullFormat)}}</p>
-    <p class="desc" v-html="event.desc"></p>
+    <p class="desc randomclass" v-html="event.desc"></p>
   </div>
 </template>
 <script>
